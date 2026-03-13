@@ -1,0 +1,52 @@
+ Conditional Statements
+
+if elif else (Syntax)
+
+if Conditional: 
+Statement1
+
+elif Conditional:
+Statement2
+
+else: 
+StatementN
+
+
+age = 20
+
+if (age>=18):
+  print("can vote & apply for licence")
+#can vote & apply for licence
+
+age = 24
+
+if (age>=18):
+  print("can vote")
+  print("Can drive")
+
+age = 24
+
+if (age>=18):
+  print("can vote")
+  print("Can drive")
+#can vote
+#Can drive
+
+num = 5
+
+if (num > 2):
+  print("greater then 2")
+if (num > 3):
+  print("gerater then 3") 
+
+#greater then 2
+#gerater then 3
+
+num = 5
+
+if (num > 2):
+  print("greater then 2")
+elif(num > 3):
+  print("gerater then 3")  
+
+#greater then 2
