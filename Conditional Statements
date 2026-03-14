@@ -1,0 +1,64 @@
+Conditional Statements   
+
+Grade Students Based On Marks 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+marks = int(input("Enter marks: "))
+
+if marks >= 90:
+    grade = "A"
+elif marks >= 80:
+    grade = "B"
+elif marks >= 70:
+    grade = "C"
+else:
+    grade = "D"
+
+print("Grade:", grade)
+
+#Enter marks: 74
+Grade: C
+#Enter marks: 90
+Grade: A
+#Enter marks: 80
+Grade: B
+----------------------------------------------------------------------------------------------------------------------------------------------
+marks = 74
+
+if marks >= 90:
+    grade = "A"
+
+elif marks >= 80 and marks < 90:
+    grade = "B"
+
+elif marks >= 70 and marks < 80:
+    grade = "C"
+
+else:
+    grade = "D"
+
+print("grade of the student ->", grade)
+
+#grade of the student -> C
+------------------------------------------------------------------------------------------------------------------------------------------------
+age = 95
+
+if age < 18:
+    print("cannot drive")
+elif age >= 80:
+    print("cannot drive")
+else:
+    print("can drive")
+#cannot drive
+
+age = 34
+
+if age < 18:
+    print("cannot drive")
+elif age >= 80:
+    print("cannot drive")
+else:
+    print("can drive")
+
+#can drive
+
+
