@@ -1,0 +1,101 @@
+                    Lists & Tuples 
+
+lists in Python 
+
+A build in data type that stores set of values it can store elements of different types (integer , float, string etc)
+
+Marks = [ 87, 64 , 33, 95, 76 ] # marks [0] , marks [1] 
+
+Student = [" karan", 85, " Delhi"]
+#student[0], student[1]
+student [0] = "Arrjun" 
+#allowed in python 
+len(Student)
+#returns length
+
+
+marks = [ 94.4, 87.5, 95.2, 66.2, 45.1]
+print(marks)
+print(type(marks))
+
+[94.4, 87.5, 95.2, 66.2, 45.1]
+<class 'list'>
+
+marks = [ 94.4, 87.5, 95.2, 66.2, 45.1]
+print(marks)
+print(type(marks))
+print(marks[0])
+print(marks[1])
+
+[94.4, 87.5, 95.2, 66.2, 45.1]
+<class 'list'>
+94.4
+87.5
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+             List Slicing 
+
+Similar to String Slicing 
+
+list_name [starting_idx : ending_idx] 
+# ending idx is not included 
+
+marks = [ 87 ,64 , 33, 95 , 76 ] 
+marks[ 1 :4] is [64 , 33, 95 ] 
+marks[ :4] is same as marks [0:4]
+marks[1: ] is same as marks [1 :len(marks)]
+marks [ -3 : -1 ] is [33 , 95]
+
+
+marks = [ 85 , 94 , 76 63 , 48 ] 
+print(marks[1:4])
+
+[94, 76, 63]
+
+marks = [ 85 , 94 , 76 , 63 , 48 ] 
+print(marks[0:4])
+
+[85, 94, 76, 63]
+
+marks = [ 85 , 94 , 76 , 63 , 48 ] 
+print(marks[1: ])
+
+[94, 76, 63, 48]
+
+marks = [ 85 , 94 , 76 , 63 , 48 ] 
+print(marks[-3:-1])
+
+[76, 63]
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+List Method 
+
+list = [2 , 1, 3]
+list.append(4) # adds one element at the end [ 2, 1, 3, 4]
+list.sort()#sorts in ascending order [ 1, 2, 3] 
+list.sort(reverse = True ) # sorts in descending order [ 3, 2, 1 ]
+list.reverse() # reverses list [ 3 , 1, 2 ] 
+list .insert(idx,el) # insert element at index 
+
+list = [ 2, 1, 3]
+list.append(4)
+print(list)
+
+[2, 1, 3, 4]
+
+list = [ 2, 1, 3]
+print(list.sort())
+
+None
+
+list = [ 2, 1, 3]
+print(list.sort())
+print(list)
+
+None
+[1, 2, 3]
+
+
