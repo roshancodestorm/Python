@@ -1,0 +1,455 @@
+Dictionary in Python
+
+Dictionary are used to store data values in key:value pairs
+they are unordered mutable (changeable) & dont allow duplicate keys.
+
+dict["name"], dict["cgpa"], dict["marks"]
+dict["key"] = "value"    #to assign or add new 
+
+info = {
+    "key" :"value",
+    "name" :"GCRG",
+    "learning" :"coding"
+}
+
+print(info)
+
+{'key': 'value', 'name': 'GCRG', 'learning': 'coding'}
+
+info = {
+    "key": "value",
+    "name": "GCRG",
+    "learning": "coding",  # comma added here
+    "age": 35,
+    "is_adult": True,
+    "marks": 94.4
+}
+
+print(info)
+
+{'key': 'value', 'name': 'GCRG', 'learning': 'coding', 'age': 35, 'is_adult': True, 'marks': 94.4}
+
+info = {
+    "name": "GCRG",
+    "subjects" :["python","C","Java"],
+    "topics" :("dict","set"),
+    "age": 35,
+    "is_adult": True,
+    "marks": 94.4
+}
+
+print(info)
+
+{'name': 'GCRG', 'subjects': ['python', 'C', 'Java'], 'topics': ('dict', 'set'), 'age': 35, 'is_adult': True, 'marks': 94.4}
+
+
+info = {
+    "name": "GCRG",
+    "subjects" :["python","C","Java"],
+    "topics" :("dict","set"),
+    "age": 35,
+    "is_adult": True,
+    12 : 94.4
+}
+
+print(info)
+
+{'name': 'GCRG', 'subjects': ['python', 'C', 'Java'], 'topics': ('dict', 'set'), 'age': 35, 'is_adult': True, 12: 94.4}
+
+info = {
+    "name": "GCRG",
+    "subjects" :["python","C","Java"],
+    "topics" :("dict","set"),
+    "age": 35,
+    "is_adult": True,
+    12 : 94.4
+}
+
+print(type(info))
+
+<class 'dict'>
+
+
+info = {
+    "name": "GCRG",
+    "subjects": ["python", "C", "Java"],
+    "topics": ("dict", "set"),
+    "age": 35,
+    "is_adult": True,
+    12: 94.4
+}
+
+print(info["name"])
+print(info["subjects"])
+print(info["topics"])
+
+GCRG
+['python', 'C', 'Java']
+('dict', 'set')
+
+info = {
+    "name": "GCRG",
+    "subjects": ["python", "C", "Java"],
+    "topics": ("dict", "set"),
+    "age": 35,
+    "is_adult": True,
+    12: 94.4
+}
+
+print(info["name"])
+print(info["subjects"])
+print(info["topics"])
+print(info["age"])
+
+GCRG
+['python', 'C', 'Java']
+('dict', 'set')
+35
+
+
+info = {
+    "name": "GCRG",
+    "subjects": ["python", "C", "Java"],
+    "topics": ("dict", "set"),
+    "age": 35,
+    "is_adult": True,
+    12: 94.4
+}
+
+info["name"] = "Roshan Kannaujiya "
+print(info)
+
+{'name': 'Roshan Kannaujiya ', 'subjects': ['python', 'C', 'Java'], 'topics': ('dict', 'set'), 'age': 35, 'is_adult': True, 12: 94.4}
+
+
+info = {
+    "name": "GCRG",
+    "subjects": ["python", "C", "Java"],
+    "topics": ("dict", "set"),
+    "age": 35,
+    "is_adult": True,
+    12: 94.4
+}
+
+info["name"] = "Roshan "
+info["surname"] = " Kannaujiya "
+print(info)
+
+{'name': 'Roshan ', 'subjects': ['python', 'C', 'Java'], 'topics': ('dict', 'set'), 'age': 35, 'is_adult': True, 12: 94.4, 'surname': ' Kannaujiya '}
+
+
+info = {
+    "name": "GCRG",
+    "subjects": ["python", "C", "Java"],
+    "topics": ("dict", "set"),
+    "age": 35,
+    "is_adult": True,
+    12: 94.4
+}
+
+null_dict = {}
+print(null_dict)
+
+{}
+
+info = {
+    "name": "GCRG",
+    "subjects": ["python", "C", "Java"],
+    "topics": ("dict", "set"),
+    "age": 35,
+    "is_adult": True,
+    12: 94.4
+}
+
+null_dict = {}
+null_dict["name"] = "Roshan Kannaujiya"
+print(null_dict)
+
+{'name': 'Roshan Kannaujiya'}
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Nested Dictionaries
+
+student["score"]["math"]
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+print(student)
+
+{'name': 'Roshan Kumar', 'subjects': {'phy': 97, 'chem': 98, 'math': 95}}
+
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+print(student["subjects"])
+
+{'phy': 97, 'chem': 98, 'math': 95}
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+print(student["subjects"]["chem"])
+
+98
+
+myDict.keys()  #returns all keys
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+print(student.keys())
+
+dict_keys(['name', 'subjects'])
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+
+print(list(student.keys()))
+
+['name', 'subjects']
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(len(student))
+print(list(student.keys()))
+
+2
+['name', 'subjects']
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(len(list(student.keys())))
+
+2
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+myDict.values()   #returns all values
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(student.values())
+
+dict_values(['Roshan Kumar', {'phy': 97, 'chem': 98, 'math': 95}])
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(list(student.values()))
+
+['Roshan Kumar', {'phy': 97, 'chem': 98, 'math': 95}]
+
+myDict.items()   #returns all (key, val) pairs as tuples 
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(student.items())
+
+dict_items([('name', 'Roshan Kumar'), ('subjects', {'phy': 97, 'chem': 98, 'math': 95})])
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(list(student.items()))
+
+[('name', 'Roshan Kumar'), ('subjects', {'phy': 97, 'chem': 98, 'math': 95})]
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+pairs = list(student.items())
+print(pairs[0])
+
+('name', 'Roshan Kumar')
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+pairs = list(student.items())
+print(pairs[1])
+
+('subjects', {'phy': 97, 'chem': 98, 'math': 95})
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+myDict.get("key") #returns the key according to value
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(student["name"])
+print(student.get("name"))
+
+Roshan Kumar
+Roshan Kumar
+
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(student["name2"]) #error
+print(student.get("name2")) #no error ->None
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+print(student["name"]) #error
+print("hi")
+print("welcomme to")
+print("GCRG")
+print("we are learning")
+print("coding")
+
+Roshan Kumar
+hi
+welcomme to
+GCRG
+we are learning
+coding
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+mydict.update(newDict)   #inserrts the specifield items to the dictionary
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+student.update({"city":"delhi"})
+print(student)
+
+{'name': 'Roshan Kumar', 'subjects': {'phy': 97, 'chem': 98, 'math': 95}, 'city': 'delhi'}
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+new_dict = {"city":"delhi", "age": 16}
+student.update(new_dict)
+print(student)
+
+{'name': 'Roshan Kumar', 'subjects': {'phy': 97, 'chem': 98, 'math': 95}, 'city': 'delhi', 'age': 16}
+
+
+student = {
+    "name" : "Roshan Kumar",
+    "subjects":{
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 95
+    }
+}
+
+new_dict = {"name":"rahul kumar", "age": 16}
+student.update(new_dict)
+print(student)
+
+{'name': 'rahul kumar', 'subjects': {'phy': 97, 'chem': 98, 'math': 95}, 'age': 16}
+
