@@ -1,0 +1,154 @@
+ Set  is the collection of the unordered items.
+Each element in the set must be unique & immmutable.
+
+nums = {1, 2, 3, 4}
+aet2 = {1, 2, 2, 2}
+
+#repeated elements stoed only once, so it resolved to {1, 2}
+null_set = set()   #empty set syntax
+
+
+collection = {1, 2, 3, 4}
+
+print(collection)
+print(type(collection))
+
+{1, 2, 3, 4}
+<class 'set'>
+
+collection = {1, 2, 3, 4, "Hello", "Roshan"}
+
+print(collection)
+print(type(collection))
+
+{1, 2, 3, 4, 'Roshan', 'Hello'}
+<class 'set'>
+
+collection = {1, 2, 2, 2, "Hello", "Roshan","Roshan"}
+
+print(collection)
+print(type(collection))
+
+{1, 2, 'Roshan', 'Hello'}
+<class 'set'>
+
+
+collection = {1, 2, 2, 2, "Hello", "Roshan","Roshan"}
+
+print(collection)
+print(len(collection))
+
+{1, 2, 'Hello', 'Roshan'}
+4
+
+collection = {} 
+
+print(type(collection))
+
+<class 'dict'>
+
+collection = set()  #empty set; syntax 
+
+print(type(collection))
+
+<class 'set'>
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+set.add(el) #adds an element
+
+collection = set()
+collection.add(1)
+collection.add(2)
+collection.add(2)
+
+print(collection)
+
+{1, 2}
+---------------------------------------------------------------------------------------------------------------------------------------
+set.remove(el)             #removes the elem an
+
+collection = set()
+collection.add(1)
+collection.add(2)
+collection.add(2)
+
+collection.remove(1)
+print(collection)
+
+{2}
+
+
+collection = set()
+collection.add(1)
+collection.add(2)
+collection.add("Roshan Kannaujiya")
+collection.add((1, 2, 3))
+
+
+print(collection)
+
+
+{1, 2, (1, 2, 3), 'Roshan Kannaujiya'}
+-------------------------------------------------------------------------------------------------------------------------------------
+
+set.clear()  #empties the set
+
+collection = set()
+collection.add(1)
+collection.add(2)
+collection.add("Roshan Kannaujiya")
+collection.add((1, 2, 3))
+
+
+print(len(collection))
+
+4
+
+collection = set()
+collection.add(1)
+collection.add(2)
+collection.add("Roshan Kannaujiya")
+collection.add((1, 2, 3))
+
+collection.clear()
+print(len(collection))
+
+0
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+set.pop() #removes a random value
+
+collection = {"hello","GCRG","world","coding","python"}
+
+print(collection.pop())
+print(collection.pop())
+
+world
+coding
+
+-----------------------------------------------------------------
+set.union(set2)  #combines both set values & returns new
+
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+
+print(set1.union(set2))
+print(set1)
+print(set2)
+
+{1, 2, 3, 4}
+{1, 2, 3}
+{2, 3, 4}
+
+------------------------------------------------------------------------
+set.intersection(set2)  #combines common values & returns new
+
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+
+print(set1.intersection(set2))
+
+{2, 3}
+
