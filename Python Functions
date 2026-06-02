@@ -1,74 +1,54 @@
-# 🚀 Python Functions Complete Guide
+# ==========================================
 
-Today I practiced Python Functions and learned Built-in Functions, User Defined Functions, Factorial Programs, Average Calculator, and Currency Converter.
 
----
-
-## 1️⃣ print()
-
-```python
+# ------------------------------------------
+# 1. Built-in Function: print()
+# ------------------------------------------
 print("Roshan", end="$")
 print("Roshan")
-```
 
-### Output
-```text
-Roshan$Roshan
-```
+# Output:
+# Roshan$Roshan
 
----
 
-## 2️⃣ len()
-
-```python
+# ------------------------------------------
+# 2. Built-in Function: len()
+# ------------------------------------------
 name = "Roshan"
 print(len(name))
-```
 
-### Output
-```text
-6
-```
+# Output:
+# 6
 
----
 
-## 3️⃣ type()
-
-```python
+# ------------------------------------------
+# 3. Built-in Function: type()
+# ------------------------------------------
 a = 10
 print(type(a))
-```
 
-### Output
-```text
-<class 'int'>
-```
+# Output:
+# <class 'int'>
 
----
 
-## 4️⃣ range()
-
-```python
+# ------------------------------------------
+# 4. Built-in Function: range()
+# ------------------------------------------
 for i in range(5):
     print(i)
-```
 
-### Output
-```text
-0
-1
-2
-3
-4
-```
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
 
----
 
-## 5️⃣ User Defined Function
-
-```python
+# ------------------------------------------
+# 5. User Defined Function
+# ------------------------------------------
 cities = ["delhi", "gurgaon", "noida", "pune", "mumbai", "chennai"]
-
 heroes = ["thor", "ironman", "captain america", "shaktiman"]
 
 def print_len(lst):
@@ -76,41 +56,30 @@ def print_len(lst):
 
 print_len(cities)
 print_len(heroes)
-```
 
-### Output
-```text
-6
-4
-```
+# Output:
+# 6
+# 4
 
----
 
-## 6️⃣ Factorial Without Function
-
-```python
+# ------------------------------------------
+# 6. Factorial Without Function
+# ------------------------------------------
 n = 5
 fact = 1
 
 for i in range(1, n + 1):
     fact *= i
-    print(fact)
-```
 
-### Output
-```text
-1
-2
-6
-24
-120
-```
+print(fact)
 
----
+# Output:
+# 120
 
-## 7️⃣ Factorial Using Function
 
-```python
+# ------------------------------------------
+# 7. Factorial Using Function
+# ------------------------------------------
 def cal_fact(n):
     fact = 1
 
@@ -120,52 +89,36 @@ def cal_fact(n):
     print(fact)
 
 cal_fact(6)
-```
 
-### Output
-```text
-720
-```
+# Output:
+# 720
 
----
 
-## 8️⃣ Average Calculator
-
-```python
+# ------------------------------------------
+# 8. Average Calculator Function
+# ------------------------------------------
 def calc_avg(a, b, c):
     total = a + b + c
     avg = total / 3
     print(avg)
-    return avg
 
 calc_avg(90, 97, 95)
-```
 
-### Output
-```text
-94.0
-94.0
-```
+# Output:
+# 94.0
 
----
 
-## 9️⃣ USD to INR Converter
-
-```python
+# ------------------------------------------
+# 9. USD to INR Converter
+# ------------------------------------------
 def converter(usd_val):
     inr_val = usd_val * 83
     print(usd_val, "USD =", inr_val, "INR")
 
 converter(10)
-```
 
-### Output
-```text
-10 USD = 830 INR
-```
-
----
-
+# Output:
+# 10 USD = 830 INR
 ## 📚 Topics Covered
 
 ✅ Built-in Functions  
