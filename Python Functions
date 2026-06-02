@@ -1,5 +1,7 @@
 # ==========================================
-
+# Python Functions Complete Guide
+# Author: Roshan Kannujiya
+# ==========================================
 
 # ------------------------------------------
 # 1. Built-in Function: print()
@@ -119,17 +121,3 @@ converter(10)
 
 # Output:
 # 10 USD = 830 INR
-## 📚 Topics Covered
-
-✅ Built-in Functions  
-✅ print()  
-✅ len()  
-✅ type()  
-✅ range()  
-✅ User Defined Functions  
-✅ Factorial Program  
-✅ Average Calculator  
-✅ Currency Converter  
-
----
-
