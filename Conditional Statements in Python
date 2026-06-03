@@ -1,0 +1,91 @@
+ # ======================================================
+# 📘 CONDITIONAL STATEMENTS IN PYTHON
+# Author: Roshan
+# Topic: if, elif, else
+# ======================================================
+
+# ------------------------------------------------------
+# 1️⃣ SIMPLE IF STATEMENT
+# ------------------------------------------------------
+age = 20
+
+if age >= 18:
+    print("can vote & apply for licence")
+
+
+# ------------------------------------------------------
+# 2️⃣ IF WITH MULTIPLE STATEMENTS
+# ------------------------------------------------------
+age = 24
+
+if age >= 18:
+    print("can vote")
+    print("can drive")
+
+
+# ------------------------------------------------------
+# 3️⃣ MULTIPLE IF (INDEPENDENT CONDITIONS)
+# ------------------------------------------------------
+num = 5
+
+if num > 2:
+    print("greater than 2")
+
+if num > 3:
+    print("greater than 3")
+
+
+# ------------------------------------------------------
+# 4️⃣ IF - ELIF (ONLY ONE WILL RUN)
+# ------------------------------------------------------
+num = 5
+
+if num > 2:
+    print("greater than 2")
+
+elif num > 3:
+    print("greater than 3")
+
+
+# ------------------------------------------------------
+# 5️⃣ REAL LIFE EXAMPLE (LOGIN SYSTEM)
+# ------------------------------------------------------
+username = "admin"
+password = "1234"
+
+if username == "admin" and password == "1234":
+    print("Login Successful")
+else:
+    print("Invalid Credentials")
+
+
+# ------------------------------------------------------
+# 6️⃣ IF - ELIF - ELSE FULL EXAMPLE
+# ------------------------------------------------------
+marks = 75
+
+if marks >= 90:
+    print("Grade: A+")
+elif marks >= 75:
+    print("Grade: A")
+elif marks >= 60:
+    print("Grade: B")
+else:
+    print("Grade: C")
+
+
+
+====================================================================================================================
+can vote & apply for licence
+
+can vote
+can drive
+
+greater than 2
+greater than 3
+
+greater than 2
+
+Login Successful
+
+Grade: A
