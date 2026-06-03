@@ -1,0 +1,184 @@
+
+# ======================================================
+
+# ------------------------------------------------------
+# 1️⃣ PRINT NUMBERS USING RECURSION
+# ------------------------------------------------------
+def show(n):
+    if n == 0:
+        return
+
+    print("Show:", n)
+    show(n - 1)
+
+
+# ------------------------------------------------------
+# 2️⃣ FACTORIAL USING RECURSION
+# ------------------------------------------------------
+def fact(n):
+    if n == 0 or n == 1:
+        return 1
+
+    return n * fact(n - 1)
+
+
+# ------------------------------------------------------
+# 3️⃣ SUM OF NATURAL NUMBERS
+# ------------------------------------------------------
+def calc_sum(n):
+    if n == 0:
+        return 0
+
+    return n + calc_sum(n - 1)
+
+
+# ------------------------------------------------------
+# 4️⃣ PRINT LIST USING RECURSION
+# ------------------------------------------------------
+def print_list(lst, idx):
+    if idx == len(lst):
+        return
+
+    print("List:", lst[idx])
+    print_list(lst, idx + 1)
+
+
+# ------------------------------------------------------
+# 5️⃣ PRINT LIST IN REVERSE (STACK BEHAVIOR)
+# ------------------------------------------------------
+def print_reverse(lst, idx):
+    if idx == len(lst):
+        return
+
+    print_reverse(lst, idx + 1)
+    print("Reverse:", lst[idx])
+
+
+# ------------------------------------------------------
+# 6️⃣ STACK SUM (LIST SUM USING RECURSION)
+# ------------------------------------------------------
+def list_sum(lst, idx):
+    if idx == len(lst):
+        return 0
+
+    return lst[idx] + list_sum(lst, idx + 1)
+
+
+# ------------------------------------------------------
+# 7️⃣ BINARY TREE NODE CLASS
+# ------------------------------------------------------
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+
+# ------------------------------------------------------
+# 8️⃣ TREE TRAVERSALS
+# ------------------------------------------------------
+
+def preorder(root):
+    if root is None:
+        return
+    print(root.data, end=" ")
+    preorder(root.left)
+    preorder(root.right)
+
+
+def inorder(root):
+    if root is None:
+        return
+    inorder(root.left)
+    print(root.data, end=" ")
+    inorder(root.right)
+
+
+def postorder(root):
+    if root is None:
+        return
+    postorder(root.left)
+    postorder(root.right)
+    print(root.data, end=" ")
+
+
+# ======================================================
+# 🚀 MAIN PROGRAM
+# ======================================================
+
+print("\n========== 1. SHOW RECURSION ==========")
+show(5)
+
+print("\n========== 2. FACTORIAL ==========")
+print("Factorial of 6 =", fact(6))
+
+print("\n========== 3. SUM OF NUMBERS ==========")
+print("Sum of 5 =", calc_sum(5))
+
+print("\n========== 4. PRINT LIST ==========")
+fruits = ["mango", "litchi", "apple", "banana"]
+print_list(fruits, 0)
+
+print("\n========== 5. REVERSE LIST ==========")
+print_reverse(fruits, 0)
+
+print("\n========== 6. STACK SUM ==========")
+numbers = [1, 2, 3, 4]
+print("Sum =", list_sum(numbers, 0))
+
+print("\n========== 7. BINARY TREE ==========")
+
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+root.left.left = Node(4)
+root.left.right = Node(5)
+
+print("\nPreorder:")
+preorder(root)
+
+print("\n\nInorder:")
+inorder(root)
+
+print("\n\nPostorder:")
+postorder(root) 
+
+======================================================================================================================================================
+========== 1. SHOW RECURSION ==========
+Show: 5
+Show: 4
+Show: 3
+Show: 2
+Show: 1
+
+========== 2. FACTORIAL ==========
+Factorial of 6 = 720
+
+========== 3. SUM OF NUMBERS ==========
+Sum of 5 = 15
+
+========== 4. PRINT LIST ==========
+List: mango
+List: litchi
+List: apple
+List: banana
+
+========== 5. REVERSE LIST ==========
+Reverse: banana
+Reverse: apple
+Reverse: litchi
+Reverse: mango
+
+========== 6. STACK SUM ==========
+Sum = 10
+
+========== 7. BINARY TREE ==========
+
+Preorder:
+1 2 4 5 3
+
+Inorder:
+4 2 5 1 3
+
+Postorder:
+4 5 2 3 1
