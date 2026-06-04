@@ -1,0 +1,263 @@
+
+# ==========================================
+# Python File I/O - Complete Guide
+# Based on Lecture7_py.pdf
+# Author: Roshan Kannujiya
+# ==========================================
+
+# ==========================================
+# 1. File Types
+# ==========================================
+
+# Text Files:
+# .txt, .docx, .log
+
+# Binary Files:
+# .mp4, .mov, .png, .jpeg
+
+
+# ==========================================
+# 2. Open, Read & Close File
+# ==========================================
+
+print("=== Open, Read & Close File ===")
+
+f = open("demo.txt", "r")
+data = f.read()
+print(data)
+f.close()
+
+
+# ==========================================
+# 3. Reading a File
+# ==========================================
+
+print("\n=== Reading Entire File ===")
+
+f = open("demo.txt", "r")
+data = f.read()
+print(data)
+f.close()
+
+print("\n=== Reading Line by Line ===")
+
+f = open("demo.txt", "r")
+line1 = f.readline()
+line2 = f.readline()
+
+print(line1)
+print(line2)
+
+f.close()
+
+
+# ==========================================
+# 4. Writing to a File (Overwrite)
+# ==========================================
+
+print("\n=== Writing to File (Overwrite) ===")
+
+f = open("demo.txt", "w")
+f.write("This is a new line.")
+f.close()
+
+print("Data written successfully.")
+
+
+# ==========================================
+# 5. Appending Data to a File
+# ==========================================
+
+print("\n=== Appending Data ===")
+
+f = open("demo.txt", "a")
+f.write("\nThis line is appended.")
+f.close()
+
+print("Data appended successfully.")
+
+
+# ==========================================
+# 6. Using with Syntax
+# ==========================================
+
+print("\n=== Using with Statement ===")
+
+with open("demo.txt", "a") as f:
+    f.write("\nAdded using with statement.")
+
+print("File closed automatically.")
+
+
+# ==========================================
+# 7. Creating a New File
+# ==========================================
+
+print("\n=== Creating practice.txt ===")
+
+with open("practice.txt", "w") as f:
+    f.write(
+        "Hi everyone\n"
+        "we are learning File I/O\n"
+        "using Java.\n"
+        "I like programming in Java."
+    )
+
+print("practice.txt created successfully.")
+
+
+# ==========================================
+# 8. Replace 'Java' with 'Python'
+# ==========================================
+
+print("\n=== Replace Java with Python ===")
+
+with open("practice.txt", "r") as f:
+    data = f.read()
+
+new_data = data.replace("Java", "Python")
+
+with open("practice.txt", "w") as f:
+    f.write(new_data)
+
+print("Replacement completed.")
+
+
+# ==========================================
+# 9. Search Word 'learning'
+# ==========================================
+
+print("\n=== Search Word 'learning' ===")
+
+with open("practice.txt", "r") as f:
+    data = f.read()
+
+if "learning" in data:
+    print("Found")
+else:
+    print("Not Found")
+
+
+# ==========================================
+# 10. Find Line Number of 'learning'
+# ==========================================
+
+print("\n=== Find Line Number ===")
+
+word = "learning"
+line_no = 1
+found = False
+
+with open("practice.txt", "r") as f:
+    for line in f:
+        if word in line:
+            print("Word found at line:", line_no)
+            found = True
+            break
+        line_no += 1
+
+if not found:
+    print(-1)
+
+
+# ==========================================
+# 11. Count Even Numbers from File
+# ==========================================
+
+print("\n=== Count Even Numbers ===")
+
+with open("numbers.txt", "w") as f:
+    f.write("1,2,3,4,5,6,7,8,9,10")
+
+count = 0
+
+with open("numbers.txt", "r") as f:
+    data = f.read()
+
+nums = data.split(",")
+
+for num in nums:
+    if int(num) % 2 == 0:
+        count += 1
+
+print("Even Numbers Count =", count)
+
+
+# ==========================================
+# 12. Delete a File
+# ==========================================
+
+print("\n=== Delete File ===")
+
+import os
+
+file_name = "temp.txt"
+
+with open(file_name, "w") as f:
+    f.write("Temporary File")
+
+os.remove(file_name)
+
+print("File deleted successfully.")
+
+
+# ==========================================
+
+
+
+
+
+
+=== Open, Read & Close File ===
+This is sample data.
+
+=== Reading Entire File ===
+This is sample data.
+
+=== Reading Line by Line ===
+This is sample data.
+
+Second Line
+
+=== Writing to File (Overwrite) ===
+Data written successfully.
+
+=== Appending Data ===
+Data appended successfully.
+
+=== Using with Statement ===
+File closed automatically.
+
+=== Creating practice.txt ===
+practice.txt created successfully.
+
+=== Replace Java with Python ===
+Replacement completed.
+
+=== Search Word 'learning' ===
+Found
+
+=== Find Line Number ===
+Word found at line: 2
+
+=== Count Even Numbers ===
+Even Numbers Count = 5
+
+=== Delete File ===
+File deleted successfully.
+
+All File I/O Examples Executed Successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
