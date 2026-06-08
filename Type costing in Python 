@@ -1,0 +1,64 @@
+# ======================================
+# Type Casting in Python
+# int ↔ float ↔ string
+# ======================================
+
+# Original values
+a = 10        # int
+b = 3.14      # float
+c = "2"       # string
+
+# -------------------------
+# Printing original types
+# -------------------------
+print("Original Values & Types")
+print(a, type(a))   # int
+print(b, type(b))   # float
+print(c, type(c))   # str
+
+print("\n--- Type Casting ---\n")
+
+# -------------------------
+# int conversions
+# -------------------------
+a_float = float(a)      # int → float
+a_str = str(a)          # int → string
+
+print("int to float:", a_float, type(a_float))
+print("int to string:", a_str, type(a_str))
+
+# -------------------------
+# float conversions
+# -------------------------
+b_int = int(b)          # float → int (decimal removed)
+b_str = str(b)          # float → string
+
+print("float to int:", b_int, type(b_int))
+print("float to string:", b_str, type(b_str))
+
+# -------------------------
+# string conversions
+# -------------------------
+c_int = int(c)          # string → int
+c_float = float(c)      # string → float
+
+print("string to int:", c_int, type(c_int))
+print("string to float:", c_float, type(c_float))
+
+
+
+
+10 <class 'int'>
+3.14 <class 'float'>
+2 <class 'str'>
+
+--- Type Casting ---
+
+int to float: 10.0 <class 'float'>
+int to string: 10 <class 'str'>
+float to int: 3 <class 'int'>
+float to string: 3.14 <class 'str'>
+string to int: 2 <class 'int'>
+string to float: 2.0 <class 'float'>
+
+
