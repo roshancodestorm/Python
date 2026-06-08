@@ -1,0 +1,216 @@
+
+
+
+# ==========================================
+# 1. Class & Object
+# ==========================================
+
+print("===== Class & Object =====")
+
+class Student:
+    name = "Karan Kumar"
+
+s1 = Student()
+print("Student Name:", s1.name)
+
+print()
+
+
+# ==========================================
+# 2. Class Attribute & Instance Attribute
+# ==========================================
+
+print("===== Class & Instance Attributes =====")
+
+class Student:
+    college = "ABC College"     # Class Attribute
+
+s1 = Student()
+s1.name = "Roshan"             # Instance Attribute
+
+print("College:", s1.college)
+print("Name:", s1.name)
+
+print()
+
+
+# ==========================================
+# 3. Constructor (__init__)
+# ==========================================
+
+print("===== Constructor (__init__) =====")
+
+class Student:
+    def __init__(self, fullname):
+        self.name = fullname
+
+s1 = Student("Karan")
+print("Student Name:", s1.name)
+
+print()
+
+
+# ==========================================
+# 4. Methods
+# ==========================================
+
+print("===== Methods =====")
+
+class Student:
+    def __init__(self, fullname):
+        self.name = fullname
+
+    def hello(self):
+        print("Hello,", self.name)
+
+s1 = Student("Karan")
+s1.hello()
+
+print()
+
+
+# ==========================================
+# 5. Practice - Average Marks
+# ==========================================
+
+print("===== Average Marks =====")
+
+class Student:
+    def __init__(self, name, marks1, marks2, marks3):
+        self.name = name
+        self.marks1 = marks1
+        self.marks2 = marks2
+        self.marks3 = marks3
+
+    def average(self):
+        avg = (self.marks1 + self.marks2 + self.marks3) / 3
+        print(f"{self.name}'s Average Marks = {avg}")
+
+s1 = Student("Roshan", 85, 90, 95)
+s1.average()
+
+print()
+
+
+# ==========================================
+# 6. Static Method
+# ==========================================
+
+print("===== Static Method =====")
+
+class Student:
+
+    @staticmethod
+    def college():
+        print("ABC College")
+
+Student.college()
+
+print()
+
+
+# ==========================================
+# 7. Abstraction Example
+# ==========================================
+
+print("===== Abstraction =====")
+
+class Car:
+    def start(self):
+        print("Car Started")
+
+    def stop(self):
+        print("Car Stopped")
+
+car1 = Car()
+car1.start()
+car1.stop()
+
+print()
+
+
+# ==========================================
+# 8. Encapsulation Example
+# ==========================================
+
+print("===== Encapsulation =====")
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def display(self):
+        print("Name:", self.name)
+        print("Salary:", self.salary)
+
+emp1 = Employee("Roshan", 50000)
+emp1.display()
+
+print()
+
+
+# ==========================================
+# 9. Practice - Bank Account
+# ==========================================
+
+print("===== Bank Account =====")
+
+class Account:
+    def __init__(self, balance, acc_no):
+        self.balance = balance
+        self.acc_no = acc_no
+
+    def debit(self, amount):
+        self.balance -= amount
+        print(f"₹{amount} Debited")
+        self.print_balance()
+
+    def credit(self, amount):
+        self.balance += amount
+        print(f"₹{amount} Credited")
+        self.print_balance()
+
+    def print_balance(self):
+        print("Current Balance =", self.balance)
+
+acc1 = Account(10000, 12345678)
+
+acc1.credit(5000)
+acc1.debit(2000)
+
+print()
+
+
+# ==========================================
+# End of Lecture 8
+# ==========================================
+print("OOP Lecture Completed Successfully!")
+
+
+
+
+
+
+===== Class & Object =====
+Student Name: Karan Kumar
+
+===== Constructor (__init__) =====
+Student Name: Karan
+
+===== Methods =====
+Hello, Karan
+
+===== Average Marks =====
+Roshan's Average Marks = 90.0
+
+===== Static Method =====
+ABC College
+
+===== Bank Account =====
+₹5000 Credited
+Current Balance = 15000
+₹2000 Debited
+Current Balance = 13000
+
+OOP Lecture Completed Successfully!
