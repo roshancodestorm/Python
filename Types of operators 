@@ -1,0 +1,85 @@
+# 🐍 Python Operators Tutorial
+
+This repository explains different types of operators in Python with simple examples.
+
+---
+
+## 1. ➕ Arithmetic Operators
+
+Used for basic mathematical operations.
+
+### Operators:
+`+`, `-`, `*`, `/`, `%`, `**`
+
+### Example:
+```python
+a = 5
+b = 2
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Power:", a ** b)
+
+
+
+2. 🔁 Relational (Comparison) Operators
+
+
+a = 50
+b = 20
+
+print(a == b)   # False
+print(a != b)   # True
+print(a > b)    # True
+print(a < b)    # False
+print(a >= b)   # True
+print(a <= b)   # False
+
+
+
+3. 🧮 Assignment Operators
+
+
+
+num = 10
+
+num += 10
+print("num:", num)   # 20
+
+num -= 10
+print("num:", num)   # 10
+
+num *= 5
+print("num:", num)   # 50
+
+num /= 5
+print("num:", num)   # 10.0
+
+num %= 3
+print("num:", num)   # 1.0
+
+num = 2
+num **= 3
+print("num:", num)   # 8
+
+
+
+
+
+4. 🔗 Logical Operators
+
+
+
+a = 50
+b = 30
+
+print(not True)   # False
+print(not False)  # True
+
+print(a > b and a < 100)  # True
+print(a > b or a < 40)    # True
+
+
