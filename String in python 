@@ -1,0 +1,58 @@
+# 🧵 Python Strings Basics
+
+This repository contains basic Python string concepts including:
+- String creation
+- Indexing
+- Slicing
+- Negative indexing
+- Escape sequences
+
+---
+
+# 📖 What is a String?
+
+A string is a data type that stores a sequence of characters.
+
+```python
+
+
+
+# =========================
+# Python Strings Examples
+# =========================
+
+# String printing
+str1 = "Hello Roshan Kannaujiya. my age 19"
+print(str1)
+
+# New line escape sequence
+str2 = "Hello Roshan Kannaujiya.\nmy age 19"
+print(str2)
+
+# Indexing
+str3 = "apna College"
+print(str3[0])
+print(str3[1])
+print(str3[2])
+print(str3[3])
+
+# Slicing
+print(str3[1:4])
+print(str3[0:4])
+print(str3[5:12])
+
+# Using len()
+print(str3[5:len(str3)])
+print(str3[5:])
+
+# Negative indexing
+str4 = "apple"
+print(str4[-3:-1])
+str1 = "Hello Roshan Kannaujiya. my age 19"
+print(str1)
+
+
+
+
+
+
