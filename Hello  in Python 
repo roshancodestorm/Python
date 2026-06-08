@@ -1,0 +1,60 @@
+
+
+# Print Statement
+print("Welcome")
+print("Roshan Kannaujiya")
+
+# Printing Multiple Lines
+print("Python Programming")
+print("Lecture 1")
+
+# Variables
+name = "Roshan"
+age = 20
+
+print("Name:", name)
+print("Age:", age)
+
+# Basic Data Types
+student = True
+marks = 85.5
+
+print("Student:", student)
+print("Marks:", marks)
+
+# Taking Input
+city = input("Enter your city: ")
+print("Your city is:", city)
+
+# Simple Addition
+a = 10
+b = 20
+
+sum = a + b
+print("Sum =", sum)
+
+print("\nLecture 1 Completed Successfully!")
+
+
+
+
+
+
+
+
+
+
+
+Welcome
+Roshan Kannaujiya
+Python Programming
+Lecture 1
+Name: Roshan
+Age: 20
+Student: True
+Marks: 85.5
+Enter your city: Lucknow
+Your city is: Lucknow
+Sum = 30
+
+Lecture 1 Completed Successfully!
