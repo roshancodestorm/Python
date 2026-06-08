@@ -1,0 +1,37 @@
+# ==========================================
+# Python Comments - Complete Example
+# Author: Roshan Kannaujiya
+# ==========================================
+
+# ------------------------------------------
+# 1. Single Line Comment
+# ------------------------------------------
+
+print("Hello Roshan")
+
+# This line is a comment and will not execute
+# print("Hello Roshan")
+
+
+# ------------------------------------------
+# 2. Multi-Line Comment
+# ------------------------------------------
+
+"""
+This is a multi-line comment.
+
+print("Hello Roshan")
+print("Hello Roshan")
+print("Hello Roshan")
+
+These lines are written inside triple quotes,
+so they are treated as a multi-line comment/documentation string.
+"""
+
+print("Python Comments Example Completed")
+
+
+
+
+Hello Roshan
+Python Comments Example Completed
