@@ -1,0 +1,91 @@
+# ==========================================
+# Python Data Types and Basic Operations
+# Author: Roshan Kannaujiya
+# ==========================================
+
+# ------------------------------------------
+# 1. Data Types in Python
+# ------------------------------------------
+
+# Integer
+num = 10
+print("Integer:", num)
+print("Type:", type(num))
+print()
+
+# String
+name = "Roshan"
+print("String:", name)
+print("Type:", type(name))
+print()
+
+# Float
+price = 99.99
+print("Float:", price)
+print("Type:", type(price))
+print()
+
+# Boolean
+is_python_easy = True
+print("Boolean:", is_python_easy)
+print("Type:", type(is_python_easy))
+print()
+
+# None
+data = None
+print("None:", data)
+print("Type:", type(data))
+print()
+
+# ------------------------------------------
+# 2. Print Sum
+# ------------------------------------------
+
+a = 5
+b = 8
+sum = a + b
+print("Sum of 5 and 8 =", sum)
+print()
+
+a = 5000
+b = 8000
+sum = a + b
+print("Sum of 5000 and 8000 =", sum)
+print()
+
+# ------------------------------------------
+# 3. Print Difference
+# ------------------------------------------
+
+a = 1000
+b = 500
+diff = a - b
+print("Difference of 1000 and 500 =", diff)
+
+# ==========================================
+# End of Program
+# ==========================================
+
+
+Integer: 10
+Type: <class 'int'>
+
+String: Roshan
+Type: <class 'str'>
+
+Float: 99.99
+Type: <class 'float'>
+
+Boolean: True
+Type: <class 'bool'>
+
+None: None
+Type: <class 'NoneType'>
+
+Sum of 5 and 8 = 13
+
+Sum of 5000 and 8000 = 13000
+
+Difference of 1000 and 500 = 500
+
+
