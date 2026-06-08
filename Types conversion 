@@ -1,0 +1,87 @@
+
+# ======================================
+# Python Type Conversion & Input Program
+# ======================================
+
+# -------------------------
+# Type Conversion (Automatic)
+# -------------------------
+a = 2
+b = 4.25
+
+print("Sum (automatic conversion):", a + b)
+
+
+a = "2"
+b = 4.25
+
+print("Type of a:", type(a))
+
+
+# -------------------------
+# Type Casting (Manual)
+# -------------------------
+
+# int casting
+a = int("2")
+b = 4.25
+
+print("\nAfter int casting:")
+print("Type of a:", type(a))
+print("Sum:", a + b)
+
+
+# float casting
+a = float("2")
+b = 4.25
+
+print("\nAfter float casting:")
+print("Type of a:", type(a))
+print("Sum:", a + b)
+
+
+# string casting
+a = 3.14
+a = str(a)
+
+print("\nAfter string casting:")
+print("Type of a:", type(a))
+
+
+# -------------------------
+# Input in Python
+# -------------------------
+
+name = input("\nEnter your name: ")
+print("Welcome,", name)
+
+val = input("Enter some value: ")
+print("Type:", type(val))
+
+
+# -------------------------
+# Input Type Conversion
+# -------------------------
+
+num = int(input("\nEnter an integer: "))
+print("Type:", type(num), "Value:", num)
+
+num2 = float(input("Enter a float: "))
+print("Type:", type(num2), "Value:", num2)
+
+
+# -------------------------
+# Multiple Inputs
+# -------------------------
+
+print("\n--- User Data ---")
+
+name = input("Enter name: ")
+age = input("Enter age: ")
+marks = input("Enter marks: ")
+
+print("\nSummary:")
+print("Name  :", name)
+print("Age   :", age)
+print("Marks :", marks)
+
